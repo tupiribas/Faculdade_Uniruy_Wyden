@@ -11,15 +11,15 @@ intervalo3 = 0
 intervalo4 = 0
 while True:
     try:
-        numero = float(input('Digite um número: '))
+        numero = int(input('Digite um número: '))
 
-        if numero > 0 and numero <= 25:
+        if 0 < numero <= 25:
             intervalo1+=1
-        elif numero > 26.0 and numero <= 50.0:
+        elif 26 < numero <= 50:
             intervalo2+=1
-        elif numero > 51 and numero <= 75:
+        elif 51 < numero <= 75:
             intervalo3+=1
-        elif numero > 76 and numero <= 100:
+        elif 76 < numero <= 100:
             intervalo4+=1
 
         print(f'Quantidade de números entre 0 e 25: {intervalo1}')
